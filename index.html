@@ -1,144 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayanava Dutta - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- FontAwesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayanava Dutta - Data Science Portfolio">
+    <title>Ayanava Dutta | Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Header with navigation -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#">Ayanava Dutta</a>
-      </div>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div id="mobile-menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About Section -->
+    <header id="home">
+        <h1>Hi, I'm <span class="highlight">Ayanava Dutta</span></h1>
+        <p class="typing"></p>
+        <button class="toggle-theme">Toggle Dark/Light Mode</button>
+    </header>
     <section id="about">
-      <div class="container">
-        <h1>Hey, I'm Ayanava</h1>
-        <p>Software Engineer | Data Scientist</p>
-        <p>
-          I'm Ayanava Dutta, a data scientist proficient in Python, Pandas, Sk-Learn, TensorFlow, and Docker,
-          with a passion for solving complex problems through machine learning.
-        </p>
-      </div>
+        <h2>About Me</h2>
+        <p>Data Engineer & AI Enthusiast experienced in PwC & Highradius. Skilled in Python, Machine Learning, Azure, Databricks, SQL.</p>
+        <div class="skills">
+            <div><p>Python</p><div class="bar python"></div></div>
+            <div><p>SQL</p><div class="bar sql"></div></div>
+            <div><p>Azure</p><div class="bar azure"></div></div>
+        </div>
     </section>
-
-    <!-- Experience Section -->
     <section id="experience">
-      <div class="container">
-        <h2>Professional Experience</h2>
-        <div class="experience-item">
-          <h3>Associate 2 - Data Analytics & AI</h3>
-          <h4>PricewaterhouseCoopers | 09/2021 - 06/2023</h4>
-          <ul>
-            <li>Led a 12-member team on automating Excel transformation using rule-based strategies.</li>
-            <li>Developed production-level code using Pandas and deployed on Azure Cloud.</li>
-            <li>Created PL/SQL scripts and ETL processes for SAP data migration.</li>
-          </ul>
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>PwC India</h3>
+                <p>Data Engineer | Cloud & AI Team</p>
+                <ul>
+                    <li>Data wrangling & Automation</li>
+                    <li>ML Model Deployment</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Highradius</h3>
+                <p>ML Engineer</p>
+                <ul>
+                    <li>Remittance Prediction</li>
+                    <li>ETL Pipelines in Databricks</li>
+                </ul>
+            </div>
         </div>
-        <div class="experience-item">
-          <h3>Data Science Intern</h3>
-          <h4>Highradius | 04/2020 - 06/2021</h4>
-          <ul>
-            <li>Worked on remittance prediction using machine learning.</li>
-            <li>Led a team of 4 interns to develop a Dockerized web app.</li>
-          </ul>
-        </div>
-        <div class="experience-item">
-          <h3>Teaching Assistant</h3>
-          <h4>Coding Ninjas | 04/2020 - 08/2020</h4>
-          <ul>
-            <li>Assisted students in Data Science and Machine Learning courses.</li>
-            <li>Monitored and evaluated projects with a 4.8/5 approval rating.</li>
-          </ul>
-        </div>
-      </div>
     </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-      <div class="container">
-        <h2>Selected Projects</h2>
+        <h2>Projects</h2>
         <div class="project-grid">
-          <div class="project-item" data-project="hr-analytics">
-            <h3>HR Analytics</h3>
-            <p>Predicting employee promotion using machine learning techniques.</p>
-            <button class="view-details">View Details</button>
-          </div>
-          <div class="project-item" data-project="env-monitoring">
-            <h3>Environment Monitoring App (Envirus)</h3>
-            <p>Predicting AQI based on vehicle numbers and displaying pollutant levels.</p>
-            <button class="view-details">View Details</button>
-          </div>
-          <!-- Additional project items can be added here -->
+            <div class="project-card">
+                <h3>HR Analytics Dashboard</h3>
+                <p>Interactive dashboard for HR Metrics.</p>
+                <a href="https://github.com/ayanava-99/hr-analytics">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Environment Monitoring App</h3>
+                <p>Real-time data monitoring with Azure IoT.</p>
+                <a href="https://github.com/ayanava-99/env-monitoring">View Project</a>
+            </div>
         </div>
-      </div>
     </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>Pandas</li>
-          <li>TensorFlow</li>
-          <li>Sk-Learn</li>
-          <li>SQL</li>
-          <li>Docker</li>
-          <li>Git</li>
-          <li>Databricks</li>
-        </ul>
-      </div>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certs">
+            <img src="assets/azure-cert.png" alt="Azure Certificate">
+            <img src="assets/aws-cert.png" alt="AWS Certificate">
+            <img src="assets/python-cert.png" alt="Python Certificate">
+        </div>
     </section>
+    <footer>
+        <h2>Contact Me</h2>
+        <p>Email: ayanavadutta99@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ayanava-dutta">Profile</a></p>
+    </footer>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ayahava.work@gmail.com">ayahava.work@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ayanava99" target="_blank">linkedin.com/in/ayanava99</a></p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal for Project Details -->
-  <div id="project-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <div id="modal-body">
-        <!-- Project details will be injected here -->
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ayanava Dutta. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
